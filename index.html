@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Quiz </title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+    </head>
+    <body>
+		<div class="topnav">
+			<a href="index.html" class="active">Quiz</a>
+		</div>
+		
+		<div class="content">
+			<h1>Quiz</h1>
+            <form id="myForm">
+                <div class="form-group">
+                    <label>Enter Your Name: </label>
+                    <input type="text" class="form-control" name="studentName" id="studentName">
+                </div>
+                <div id="nameError">
+                    <p class="error">Please enter a name.</p>
+                </div>
+                <div class="form-group">
+                    <label>Is JavaScript Typed?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios1">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div id="question1Error">
+                    <p class="error">Please answer the question.</p>
+                </div>
+                <div id="question1Correct">
+                    <p class="correct">Correct!</p>
+                </div>
+                <div id="question1Wrong">
+                    <p class="error">Incorrect!</p>
+                </div>
+                <div class="form-group">
+                    <label>What is the HTML tag where you can write JavaScript code?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="exampleRadios3" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            javascript
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="exampleRadios4" value="option2">
+                        <label class="form-check-label" for="exampleRadios1">
+                            scripted
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="exampleRadios5" value="option3">
+                        <label class="form-check-label" for="exampleRadios1">
+                            script
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="exampleRadios6" value="option4">
+                        <label class="form-check-label" for="exampleRadios1">
+                            js
+                        </label>
+                    </div>
+                </div>
+                <div id="question2Error">
+                    <p class="error">Please answer the question.</p>
+                </div>
+                <div id="question2Correct">
+                    <p class="correct">Correct!</p>
+                </div>
+                <div id="question2Wrong">
+                    <p class="error">Incorrect!</p>
+                </div>
+                <div class="form-group">
+                    <label>Which JavaScript changes the content of the following: &ltp&gt id="geek"&gtCSUMB &lt/p&gt</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="exampleRadios7" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            document.getElement(“geek”).innerHTML=”Cal State Monterey Bay”;
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="exampleRadios8" value="option2">
+                        <label class="form-check-label" for="exampleRadios1">
+                            document.getElementById(“geek”).innerHTML=”Cal State Monterey Bay”;
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="exampleRadios9" value="option3">
+                        <label class="form-check-label" for="exampleRadios1">
+                            document.getId(“geek”)=”Cal State Monterey Bay”;
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="exampleRadios10" value="option4">
+                        <label class="form-check-label" for="exampleRadios1">
+                            document.getElementById(“geek”).innerHTML=Cal State Monterey Bay;
+                        </label>
+                    </div>
+                </div>
+                <div id="question3Error">
+                    <p class="error">Please answer the question.</p>
+                </div>
+                <div id="question3Correct">
+                    <p class="correct">Correct!</p>
+                </div>
+                <div id="question3Wrong">
+                    <p class="error">Incorrect!</p>
+                </div>
+            </form>
+			<button id="submitQuizBtn" class="btn btn-outline-success"> Submit Quiz </button>
+            <div>
+                <h5 id="studentNameMessage"></h5>
+                <p id="scoreMessage"></p>
+            </div>
+		</div>
+		<div class="footer">
+			<h2>CST336 Internet Programming. 2019 &copy; Pourazari</h2>
+			<p>It is used for academic purposes only.</p>
+			<img src="img/logo.png" alt="Picture of Bijan Pourazari" />
+		</div>
+    </body>
+</html>
